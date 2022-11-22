@@ -11,17 +11,17 @@ public class Listener extends Thread{
   private Client client;
   private DataInputStream ds;
   private PrintStream ps;
-  private String  name ;
+  private String  name;
   private String rival;
   private boolean gameOver = false;
 
     private boolean heartBeat = true;
 
 
-    public Listener(Socket s, Client client){
-        this.socket = s;
-        this.client = client;
-        if (socket != null){
+  public Listener(Socket s, Client client) {
+    this.socket = s;
+    this.client = client;
+    if (socket != null){
             try {
                 ds = new DataInputStream(socket.getInputStream());
                 ps = new PrintStream(socket.getOutputStream());
