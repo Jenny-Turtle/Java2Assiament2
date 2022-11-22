@@ -115,9 +115,9 @@ public class Listener extends Thread{
         }
     }
 
-    public void chessMove(){
-        if(!gameOver) {
-            client.getChess().getCanvas().setOnMouseClicked(e -> {
+  public void chessMove(){
+      if(!gameOver) {
+          client.getChess().getCanvas().setOnMouseClicked(e -> {
                 double a, b;
                 int m, n;
                 boolean flag = false;
