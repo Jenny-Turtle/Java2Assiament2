@@ -7,13 +7,13 @@ import java.net.Socket;
 import java.util.StringTokenizer;
 
 public class Listener extends Thread{
-    private Socket socket;
-    private Client client;
-    private DataInputStream ds;
-    private PrintStream ps;
-    private String  name ;
-    private String rival;
-    private boolean gameOver = false;
+  private Socket socket;
+  private Client client;
+  private DataInputStream ds;
+  private PrintStream ps;
+  private String  name ;
+  private String rival;
+  private boolean gameOver = false;
 
     private boolean heartBeat = true;
 
